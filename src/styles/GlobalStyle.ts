@@ -7,8 +7,9 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
-html {
-  font-family: Tahoma, sans-serif;
+html {  
+  font-family: ${(prop) => prop.theme.fonts.primary};
+  background-color: ${(prop) => prop.theme.colors.light};
 }
 
 body,
@@ -44,8 +45,12 @@ button {
   cursor: pointer;
 }
 
-.header-title {
-  margin: 20px;
+.header {
+  padding: 60px;
+  text-align: center;
+  background: ${(prop) => prop.theme.colors.primary};
+  color: white;
+  font-size: ${(prop) => prop.theme.fontSizes.big};
 }
 `;
 
