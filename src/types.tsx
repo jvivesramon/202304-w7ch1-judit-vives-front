@@ -8,5 +8,5 @@ export interface RobotStructure {
 }
 
 export interface RobotStoreStructure {
-  robots: RobotStoreStructure[];
+  robots: RobotStructure[];
 }
