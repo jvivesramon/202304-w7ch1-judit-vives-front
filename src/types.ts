@@ -3,8 +3,10 @@ export interface RobotStructure {
   name: string;
   image: string;
   speed: number;
-  resistence: number;
-  creationDate: string;
+  endurance: number;
+  year: number;
+  movie: string;
+  description: string;
 }
 
 export interface RobotStoreStructure {
