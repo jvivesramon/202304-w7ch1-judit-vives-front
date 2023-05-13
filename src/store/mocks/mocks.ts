@@ -1,4 +1,4 @@
-import { RobotStructure } from "../../../types";
+import { RobotStructure } from "../../types";
 
 export const robotTest: RobotStructure[] = [
   {

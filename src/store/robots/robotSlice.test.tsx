@@ -1,5 +1,5 @@
 import { RobotStoreStructure } from "../../types";
-import { robotTest } from "./mocks/mocks";
+import { robotTest } from "../mocks/mocks";
 import { loadRobotActionCreator, robotsReducer } from "./robotsSlice";
 
 describe("Given a loadRobot reducer", () => {
