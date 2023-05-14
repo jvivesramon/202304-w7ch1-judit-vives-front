@@ -22,3 +22,9 @@ export const robotTest: RobotStructure[] = [
     movie: "xxx",
   },
 ];
+
+export const robotsTestStore = {
+  robots: {
+    robots: robotTest,
+  },
+};
