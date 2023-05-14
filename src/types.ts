@@ -1,12 +1,16 @@
-export interface RobotStructure {
-  id: number;
-  name: string;
-  image: string;
+interface RobotCapabilities {
   speed: number;
   endurance: number;
-  year: number;
+}
+
+export interface RobotStructure {
+  _id: string;
+  name: string;
   movie: string;
+  image: string;
+  year: number;
   description: string;
+  capabilities: RobotCapabilities;
 }
 
 export interface RobotStoreStructure {

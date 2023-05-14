@@ -1,27 +1,60 @@
-import { RobotStructure } from "../../types";
+import { RobotStoreStructure, RobotStructure } from "../../types";
 
 export const robotTest: RobotStructure[] = [
   {
     description: "xsdf",
-    id: 4,
+    _id: "4",
     image: "/img/wall-e.webp",
     name: "Wall-E",
-    endurance: 100,
-    speed: 30,
+    capabilities: {
+      endurance: 100,
+      speed: 30,
+    },
     year: 1999,
     movie: "Wall-E",
   },
   {
     description: "xsdf",
-    id: 5,
+    _id: "5",
     image: "robot.jpg",
     name: "xxx",
-    endurance: 100,
-    speed: 30,
+    capabilities: {
+      endurance: 100,
+      speed: 30,
+    },
     year: 1999,
     movie: "xxx",
   },
 ];
+
+export const robotTestMock: RobotStoreStructure = {
+  robots: [
+    {
+      description: "xsdf",
+      _id: "4",
+      image: "/img/wall-e.webp",
+      name: "Wall-E",
+      capabilities: {
+        endurance: 100,
+        speed: 30,
+      },
+      year: 1999,
+      movie: "Wall-E",
+    },
+    {
+      description: "xsdf",
+      _id: "5",
+      image: "robot.jpg",
+      name: "xxx",
+      capabilities: {
+        endurance: 100,
+        speed: 30,
+      },
+      year: 1999,
+      movie: "xxx",
+    },
+  ],
+};
 
 export const robotsTestStore = {
   robots: {

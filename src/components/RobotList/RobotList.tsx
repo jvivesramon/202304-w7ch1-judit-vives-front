@@ -8,7 +8,7 @@ const RobotList = (): JSX.Element => {
   return (
     <RobotStyled>
       {robotsItems.map((robot) => (
-        <li key={robot.id}>
+        <li key={robot._id}>
           <RobotCard robot={robot} />
         </li>
       ))}
