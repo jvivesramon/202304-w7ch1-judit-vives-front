@@ -9,7 +9,8 @@ const HeaderStyled = styled.header`
   justify-content: space-between;
 
   .header-icon {
-    width: 75px;
+    max-width: 5%;
+    height: auto;
   }
 `;
 
