@@ -12,6 +12,8 @@ html {
   background-color: ${(prop) => prop.theme.colors.light};
 }
 
+
+
 body,
 h1,
 h2,
@@ -45,12 +47,27 @@ button {
   cursor: pointer;
 }
 
-.header {
-  padding: 60px;
-  text-align: center;
-  background: ${(prop) => prop.theme.colors.primary};
-  color: white;
-  font-size: ${(prop) => prop.theme.fontSizes.big};
+.container{
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    flex-direction: column; 
+}
+
+
+
+.header-icon {
+  width:75px;
+}
+
+
+header {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding-inline: 32px;
+  background-color: ${(prop) => prop.theme.colors.primary};
+  justify-content: space-between;
 }
 `;
 

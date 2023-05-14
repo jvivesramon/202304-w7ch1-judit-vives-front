@@ -4,7 +4,7 @@ export const robotTest: RobotStructure[] = [
   {
     description: "xsdf",
     id: 4,
-    image: "robot.jpg",
+    image: "/img/wall-e.webp",
     name: "Wall-E",
     endurance: 100,
     speed: 30,
