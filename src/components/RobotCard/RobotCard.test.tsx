@@ -6,9 +6,9 @@ import RobotCard from "./RobotCard";
 import { store } from "../../store";
 
 describe("Given a RobotCard component", () => {
-  describe("When it receives a robot item", () => {
+  describe("When it receives the 'Wall-E' robot item", () => {
     test("Then it should show a heading with 'ROBOT'", () => {
-      const expectedHeading = "ROBOT";
+      const expectedHeading = "Wall-E";
 
       const receivedRobot: RobotStructure = robotTest[0];
 
