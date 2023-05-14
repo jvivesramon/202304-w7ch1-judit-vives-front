@@ -1,12 +1,12 @@
 import { renderHook } from "@testing-library/react";
 import useApi from "./useApi";
-import { robotTest } from "../store/mocks/mocks";
-import { RobotStructure } from "../types";
+import { robotTestMock } from "../store/mocks/mocks";
+import { RobotStoreStructure } from "../types";
 
 describe("Given a getRobots function,", () => {
   describe("When it is called,", () => {
     test("Then it should return a list of robots", async () => {
-      const expectedList: RobotStructure[] = robotTest;
+      const expectedList: RobotStoreStructure = robotTestMock;
 
       const {
         result: {

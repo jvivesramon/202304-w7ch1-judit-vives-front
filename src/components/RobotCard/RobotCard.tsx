@@ -6,7 +6,14 @@ interface RobotProps {
 }
 
 const RobotCard = ({
-  robot: { description, endurance, image, movie, name, speed, year },
+  robot: {
+    description,
+    image,
+    movie,
+    name,
+    year,
+    capabilities: { endurance, speed },
+  },
 }: RobotProps): JSX.Element => {
   return (
     <RobotStyled>
