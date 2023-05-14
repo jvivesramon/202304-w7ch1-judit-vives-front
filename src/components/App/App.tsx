@@ -20,8 +20,9 @@ const App = (): JSX.Element => {
   return (
     <>
       <Header />
-      <div className="container"></div>
-      <RobotList />
+      <div className="container">
+        <RobotList />
+      </div>
     </>
   );
 };

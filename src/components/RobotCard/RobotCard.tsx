@@ -22,9 +22,9 @@ const RobotCard = ({
       <ul className="card-list">
         <li className="card-list-item">Movie: {movie}</li>
         <li className="card-list-item">Year: {year}</li>
-        <li className="card-list-item">Description: {description}</li>
         <li className="card-list-item">Speed: {speed}</li>
         <li className="card-list-item">Endurance: {endurance}</li>
+        <li className="card-list-item">Description: {description}</li>
       </ul>
     </RobotStyled>
   );
