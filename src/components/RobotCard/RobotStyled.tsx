@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-const RobotStyled = styled.div`
+const RobotStyled = styled.article`
   display: flex;
-  position: relative;
-  justify-content: center;
-  width: fit-content;
   flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
+  min-height: 500px;
+  padding: 10px;
   margin-top: 20px;
   border-style: double;
 
@@ -21,10 +22,12 @@ const RobotStyled = styled.div`
 
   ul.card-list {
     list-style-type: none;
+    padding: 10px;
   }
 
   li.card-list-item {
     margin-bottom: 5px;
+    font-size: 1.2rem;
   }
 `;
 
