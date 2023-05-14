@@ -7,6 +7,8 @@ const HeaderStyled = styled.header`
   padding-inline: 32px;
   background-color: ${(prop) => prop.theme.colors.primary};
   justify-content: space-between;
+  flex-shrink: 1;
+  gap: 10px;
 
   .header-icon {
     max-width: 5%;
