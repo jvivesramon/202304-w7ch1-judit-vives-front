@@ -1,4 +1,4 @@
-import { RobotStructure } from "../../types";
+import { RobotStructure } from "../../types/types";
 import RobotStyled from "./RobotStyled";
 
 interface RobotProps {
