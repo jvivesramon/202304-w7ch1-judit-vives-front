@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useCallback } from "react";
-import { RobotStoreStructure } from "../types";
+import { RobotStoreStructure } from "../../types/types";
 const apiUrl = import.meta.env.VITE_API_URL;
 
 const useApi = () => {

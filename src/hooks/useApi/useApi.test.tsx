@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import useApi from "./useApi";
-import { robotTestMock } from "../store/mocks/mocks";
-import { RobotStoreStructure } from "../types";
+import { robotTestMock } from "../../store/mocks/mocks";
+import { RobotStoreStructure } from "../../types/types";
 
 describe("Given a getRobots function,", () => {
   describe("When it is called,", () => {
