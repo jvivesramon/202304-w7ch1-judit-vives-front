@@ -16,3 +16,8 @@ export interface RobotStructure {
 export interface RobotStoreStructure {
   robots: RobotStructure[];
 }
+
+export interface UserCredentials {
+  username: string;
+  password: string;
+}
