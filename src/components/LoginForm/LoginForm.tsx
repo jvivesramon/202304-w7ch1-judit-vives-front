@@ -25,8 +25,8 @@ const LoginForm = (): JSX.Element => {
 
   return (
     <LoginFormStyled autoComplete="off" onSubmit={handleSubmit}>
-      <label className="form-name" htmlFor="name">
-        Name:
+      <label className="form-name" htmlFor="username">
+        Username:
       </label>
       <input
         className="form__input"
