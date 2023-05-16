@@ -1,4 +1,4 @@
-import { RobotStoreStructure } from "../../types";
+import { RobotStoreStructure } from "../../types/types";
 import { robotTest } from "../mocks/mocks";
 import { loadRobotActionCreator, robotsReducer } from "./robotsSlice";
 

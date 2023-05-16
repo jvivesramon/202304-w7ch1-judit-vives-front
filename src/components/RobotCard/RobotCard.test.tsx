@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { robotTest } from "../../store/mocks/mocks";
-import { RobotStructure } from "../../types";
+import { RobotStructure } from "../../types/types";
 import { Provider } from "react-redux";
 import RobotCard from "./RobotCard";
 import { store } from "../../store";
