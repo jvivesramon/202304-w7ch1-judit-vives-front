@@ -4,7 +4,7 @@ import useUser from "../../hooks/useUser/useUser.js";
 
 const LoginForm = (): JSX.Element => {
   const [login, setLogin] = useState({ username: "", password: "" });
-  const { getUserToken } = useUser();
+  const { loginUser } = useUser();
 
   const onChangeRegister = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLogin({
@@ -13,14 +13,12 @@ const LoginForm = (): JSX.Element => {
     });
   };
 
-  const isValidForm = () => {
-    return login.username !== "" && login.password !== "";
-  };
+  const isValidForm = login.username !== "" && login.password !== "";
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
 
-    await getUserToken(login);
+    await loginUser(login);
   };
 
   return (
@@ -45,7 +43,7 @@ const LoginForm = (): JSX.Element => {
         id="password"
         onChange={onChangeRegister}
       />
-      <button className="form__button" disabled={!isValidForm()}>
+      <button className="form__button" disabled={!isValidForm}>
         Login
       </button>
     </LoginFormStyled>
